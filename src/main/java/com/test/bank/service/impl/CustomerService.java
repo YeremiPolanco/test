@@ -9,6 +9,5 @@ import com.test.bank.repository.ICustomerRepository;
 @Service
 public class CustomerService {
 
-	@Autowired
-	private ICustomerRepository customerRepository;
+
 }

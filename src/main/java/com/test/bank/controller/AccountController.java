@@ -16,7 +16,7 @@ public class AccountController {
 	@Autowired
 	private AccountService accountService;
 	
-	@GetMapping
+	@GetMapping("/account")
 	public Flux<AccountResponse> getAccounts() {
 		return accountService.getAccounts()
 				.map(AccountResponseConverter::convert);

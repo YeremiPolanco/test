@@ -9,6 +9,4 @@ import com.test.bank.repository.IMovementsRepository;
 @Service
 public class MovementsService {
 
-	@Autowired
-	private IMovementsRepository movementsRepository;
 }
