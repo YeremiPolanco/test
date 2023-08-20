@@ -10,10 +10,11 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Account {
-	
-	private String number;
-	private String type;
-	private BigDecimal initialBalance;
-    private String state;
+  
+  private Integer accountId;
+  private String number;
+  private String type;
+  private BigDecimal initialBalance;
+  private String state;
 
 }

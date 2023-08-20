@@ -1,7 +1,14 @@
 package com.test.bank.repository;
 
-import org.springframework.stereotype.Repository;
+import java.time.LocalDate;
+import java.util.List;
+import java.util.Optional;
 
-public interface IMovementsRepository {
+import org.springframework.data.repository.CrudRepository;
 
+import com.test.bank.repository.entity.MovementsEntity;
+
+public interface IMovementsRepository extends CrudRepository<MovementsEntity, Integer>{
+  List<MovementsEntity> findAllByDateAndType(LocalDate date, String type);
+  Optional<MovementsEntity> findTopByOrderByMovementsIdDesc();
 }
